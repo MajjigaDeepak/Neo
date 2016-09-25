@@ -20,6 +20,7 @@ from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register(r'Querys', views.queryViewset)
+router.register(r'Questions', views.questionViewset)
 
 admin.autodiscover()
 

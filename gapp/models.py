@@ -12,3 +12,10 @@ class Query(models.Model):
 
     def __str__(self):
         return self.ques
+
+
+class question(models.Model):
+    text = models.CharField(max_length=100, null=True)
+
+    def __str__(self):
+        return self.text
